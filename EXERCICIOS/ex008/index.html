@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+<h1>Principais Formatações</h1>
+<h2>Negrito / Destaque</h2>
+<p>Nessa frase temos um <b>termo em negrito</b> usando a tag B ( nao semantica) </p><!--a tag B e uma tag nao semantica ou seja nao esta dentro dos padrões do HTML5 -->
+<p>nessa frase tenho um <strong>termo em negrito</strong> usando a tag STRONG( SEMANTICA )</p>
+<H2>Italico / Ênfase</H2>
+<p>Nesta frase , temos um <i>termo em italico</i> usando tag I (nao semantica) </p><!--Para fazer um comando sem precisar realocar a escrita , selecione a mesma e aperte ctrl+shift+P e procurar ABB envelope com abreviatura e depois digitar apenas e letra do comando que deseja adicionar a aquele frase selecionada -->
+<p>Nesta frase , Temos um <em>termo em enfase</em> usando a tag EM (semantica)</p>
+<!--aqui inicia a proxima aula do capitulo 8   ex009-->
+<h2>Texto marcado</h2>
+<p>Podemos criar também <mark style="background-color: lime;"><strong>um texto marcado</strong></mark> usando a tag MARK.</p>
+<p>e no outro parágrafo , temos <mark><strong>outro texto marcado</strong></mark> no final.</p>
+<!-- colocando style logo apos o mark e possivel alterar a cor do marca texto assim fazendo os comandos apos o mark style>background-color>cor-->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcador global</title>
+    <!--lembrando que o comando deve ficar no topo do codigo  e inicair por style>mark>{background-color:cor }} se atentando a chave de abertura e fechamento
+    -->
+    <style>
+        mark{background-color: brown;}
+    </style>
+</head>
+<body>
+    <h1>marcador global</h1>
+    posso executar apenas <mark>um comando</mark> para que todas as tags mark fique na cor que eu <mark>desejar com o comando.</mark>
+    <h2>texto grande e pequeno</h2>
+    <p>Estamos criando um <big><ins>texto grande</ins
+    ></big> e um <small><ins>texto pequeno</ins></small> neste paragráfo</p>
+    <!--o comando INS serve para sublinhar -->
+    <!--BIG ja nao é mais usado pois nao faz sentido no codigo , nao e semantica-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido mais nao considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como enserido</ins> para dar um enfase e indicar que ele foi adicionado depois.</p>
+    <!--o comando INS serve para sublinhar -->
+    <!--o comando DEL serve para riscar o texto -->
+    <h2>Texto sobrescrito</h2>
+    <p>Para enserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscreito</h2>
+    <p>Para enserir coisas do tipo h<sub>2</sub>O</p>
+</body>
+</html>

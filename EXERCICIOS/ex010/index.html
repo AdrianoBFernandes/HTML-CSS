@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Trabalhando com Links</title>
+</head>
+
+<body>
+        <!--para alocar um site basta selecionar a palavra que quer como link e colocar o tag A e depois do href colocar o link-->
+        <h1>Trabalhando com links externos</h1>
+        <img src="mascote.png" alt="logo gustavoguanabara">
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank"
+                        rel="external">repositório
+                        público no GitHub</a>
+        </p>
+        <!--para quando forem abrir esse link externo e nao sairem do seu site voce pode criar o comando target="_blank" rel="external" logo apos o link do site para que seja aberto uma nova aba com o link que esta no seu site -->
+        <img src="youtube-logo-youtube-icon-transparent-free-png.webp" alt="logo yotube">
+        <p>Você também pode acessar o meu <a href="http://youtube.com/cursoemvideo/">canal gratuito do youtube</a></p>
+        <H2>Cursos</H2>
+        <p>Aqui Alguns Cursos que voce pode fazer:</p>
+        <ul type="circle">
+                <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"
+                                target="_blank" rel="external">HTML e CSS</a></li>
+                <img src="logo html 200.png" alt="HTML"><img src="logo css-200.png" alt="css">
+                <li><a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_"
+                                target="_blank" rel="external">PHP</a></li>
+                <A href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_"
+                        target="_blank" rel="external"><img src="php logo.png" alt="PHP"></A>
+                <LI><a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1"
+                                target="_blank" rel="external">JavaScript</a></LI>
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--html-programming-language-coding-logos-icons-1720087.png?f=webp&w=256"
+                        alt="JavaScript">
+        </ul>
+        <!--se colocar uma imagem dentro da tag A a imagem acaba se tornando um ponto de acesso para o link tambem-->
+        <h1>Usando link interno</h1>
+        <p>Esta é a primeira pagina do meu site , se voce quiser , pode acessar tambem a minha <a href="pag002.html" rel="next">segunda pagina.</a></p>
+        <!-- consigo colocar uma segunda pagina minhas mesmo do meu site e utilizando o rel>next eu informo que seria a proxima pagina apartir da atual-->
+         <p>você tambem pode acessar nossa <a href="noticia/pag003.html" rel="next">pagina de noticias</a></p>
+         <h1>Links para download</h1>
+         <!-- consigo colocar arquivos para download no site com a mesma tag de links , lembrando que devo colocar a tag download+nome do arquivo> type> a application dele que posso encontar no site https://www.iana.org/assignments/media-types/media-types.xhtml -->
+         <ul>
+                <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/PDF" target="_blank" rel="externa">Baixar o livro em PDF</a></li>
+                <li><a href="livro/10 - Ligações em toda parte.rar" download="Ligações em toda parte.rar" type="application/ZIP">Livro Compactado em ZIP</a></li>
+         </ul>
+         <p><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Referencia externa de application</a></p>
+</body>
+
+</html>

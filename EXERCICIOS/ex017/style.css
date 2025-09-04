@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Reset Básico da Página */
+html, body {
+    margin: 0;      /* Remove margens padrão */
+    padding: 0;     /* Remove preenchimentos padrão (corrigido para '0') */
+    height: 100%;   /* Garante altura total */
+    min-height: 100vh; /* Garante que o fundo cubra toda a tela */
+    box-sizing: border-box; /* Modelo de caixa consistente */
+}
+body {
+    background-image: linear-gradient(40deg, black 30%, white, gold); /* Fundo com gradiente */
+    background-attachment: fixed; /* Fundo fixo ao rolar a página */
+    background-size: cover; /* Garante que o fundo cubra a área */
+}
+
+main {
+    background-color: white;
+    width: 600px; /* Largura do quadro */
+    padding: 10px; /* Espaçamento interno */
+    margin: 100px auto 0 auto; /* Margem: 100px topo, centraliza horizontalmente, 0px baixo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 3px 3px 5px #f1f2f3a1; /* Sombra do quadro */
+    max-width: 90%; /* Ajusta largura em telas pequenas */
+    max-height: 80vh; /* Limita a altura em telas pequenas (ajuste conforme necessário) */}
+    
+
+
+p {
+    margin-inline: 20px; /* Margem lateral */
+    /* text-align: justify; Se você quiser justificar o texto dos parágrafos, descomente. */
+}
+
+
+h1, h2 {
+    text-align: center; /* Centraliza o texto dos títulos */
+}

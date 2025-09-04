@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Garante que o body preencha toda a altura da tela e remove margens/paddings padrão dos navegadores */
+html,body {
+    margin: 0px;
+    /* Remover margens padrão do navegador */
+    padding: 0;
+    /* Remover padding padrão do navegador */
+    height: 100%;
+    /* HTML e Body ocupam 100% da altura do navegador(viewport) */
+}
+
+body {/*background-image: linear-gradient para fazer efeito de transiçao de cores*/
+background-image: linear-gradient(-40deg, #20448C, #008CDB, #FFD340 80%);
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;/*Alinha o texto dos parágrafos de forma justificada */
+}
+
+main {
+    background-color: white;
+    width: 600px; /*tamanho do quadro branco*/
+    padding: 10px;/*margem dentro do quadro*/
+    margin: auto;/*margem no quadro branco automatica por fora*/
+    margin-top: 20px;/* margem superior para afastar do topo da página */
+    border-radius: 10px;/*borda da caixa arredondadas*/
+    box-shadow: 3px 3px 5px #008CDB;/*Sombra para dar profundidade a caixa*/
+}
+h1{color:lab(72.92% 12.33 73.85);
+    text-align: center;
+    text-shadow: 1px 1px 2px #e6b4118c;
+}
+h2{color:#086CB4}

@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+:root {
+    --corb: #000000;
+    --corw: #ffffff;
+    --cor0: #C2CEDE;
+    --cor1: #7D91AB;
+    --cor2: #405878;
+    --cor3: #172B45;
+    --cor4: #071A33;
+    --cor5: #000000; 
+    
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: "Cutive", serif, Arial;
+    --fonte-titulo: "Cutive Mono", monospace, Arial;
+}
+
+body {
+    background-color: var(--cor3);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-padrao); 
+}
+
+header {
+    background-color: var(--corw);
+    margin:40px 0px 0px 0px;
+}
+
+main {
+    background-color: var(--cor0);
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px 0px;
+}
+
+img {
+    padding-top: 30px;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.151);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--corw);
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 0 5px; 
+}
+nav > a:hover{
+    background-color:var(--corw);
+    color: var(--cor4);
+    transition-duration: 1s;
+    padding: 9px 30px;
+   border-radius: 0 5px;;
+}
+main p {
+    text-align: justify;
+    background-color: var(--corw);
+    padding: 15px;
+    border-radius: 0 5px;
+    font-size: 16px; 
+}
+
+main h2 {
+    background-color: var(--corw);
+    text-align: center;
+    max-width: 250px;
+    margin: 40px auto 20px; 
+    border-radius: 0 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    font-family: var(--fonte-titulo);
+    padding: 4px;
+}
+
+.beneficios {
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+}
+
+.metodo {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    text-align: center;
+    border-radius: 0 5px;
+    padding: 20px;
+}
+
+.destaque-titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-desafios, .container-desafios-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px; 
+}
+
+.desafios-1, .desafios-2, .desafios-3, .desafios-4, .desafios-5, .desafios-6 {
+    background-color: var(--corw);
+    text-align: center;
+    width: 250px;
+    min-height: 130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0; 
+    border-radius: 0 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    font-family: var(--fonte-titulo);
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+.container-desafios > p:hover, .container-desafios-2 > p:hover {
+    background-color: var(--cor2);
+    color: var(--corw);
+    transform: scale(1.1); 
+    
+}
+.container-ferramentas-1,.container-ferramentas-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.ferramenta-1,.ferramenta-2,.ferramenta-3,.ferramenta-4,.ferramenta-5{
+     background-color: var(--corw);
+    text-align: center;
+    width: 250px;
+    min-height: 130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0; 
+    border-radius: 0 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    font-family: var(--fonte-titulo);
+    transition: transform 0.5s ease-in-out; 
+}
+.container-ferramentas-1 > p:hover, .container-ferramentas-2 > p:hover {
+    background-color: var(--cor2);
+    color: var(--corw);
+    transform: scale(1.1); 
+    
+}
+
+.final{
+      background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    text-align: center;
+    border-radius: 0 5px;
+    padding: 20px;
+}
+footer {text-align: center;
+margin: auto;
+background-color: var(--cor0);
+max-width: 1200px;
+font-size: 12px;}
+footer a {
+    text-decoration: none;
+} 

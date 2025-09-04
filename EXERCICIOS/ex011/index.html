@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009/favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Diâmica</h1>
+    <p>Tente Abrir esse site em Varios dispositivos diferentes ou aumente e diminua o tamanho do seu navegador </p>
+    <!--colocando a tag picture eu informo ao codigo que vai aver varias imagens dentro da tag-->
+    <!--usando a tag source>midia>type eu consigo escolher os px das imagens -->
+    <!--no caso do exemplo foi ajustada da maior para a menos inciando apenas com a tag img dentro da tag picture e depois ajustando os comando com a source>midia>type-->
+    <picture>
+        <!--SEMPRE SEGUIR A ORDEM DE TAMANHO-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="imagens/fotos-g.png" alt="imagem flexivel"> 
+      
+    </picture>
+    <!--usando a tag source eu consigo alinhar quando a imagem deve aparecer no caso do exemplo eu passei o comando para max-width: 1050px que segnifica que quando a tela passar de 1050px deve ter o tamanho g se estiver dentro do maximo tem que ser o tamanho M que foi apontado dentro do srcset>type e assim tambem da 750px quando for menos passar para imagem P-->
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <!--a peproducao nao comeca sozinha eu preciso acrecentar alem da tag audio> controls> para aparecer o controle e com autoplay talvez possa inicar sozinho a musica quando abrir o site mais detemde do navegador para esse metodo em mp3-->
+    <audio src="midia/midia-011.mp3" controls autoplay></audio>
+    <!--tipos de audio MP3 WAV OGG-->
+
+<!--TYPEMP3=AUDIO/MPEG-----TYPEOGG=AUDIO/OGG--------TYPEWAV=AUDIO/WAV-->
+    <H2>Outra maneira de colocar audio</H2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/midia-011.mp3" type="audio/mpeg">
+    </audio>
+    <!--Aqui é possivel ver um metodo diferente de colocar audio , no exemplo usamos as tag audio>source:type sem utilizar o SRC, tambem foi realizados algum parametros como PRELOAD > AUTOPLAY > CONTROLS para que fosse possivel reproduzir o audio e com a parametro LOOP fazemos que o audio entre em modo loop e quando acabar volte ao inicio-->
+    <!--NEM UMA DAS TENTATIVAS O AUDIO RODOU SOZINHO-->
+</body>
+</html>
